@@ -17,6 +17,141 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/buttonMais3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais2" />
+
+            <Button
+                android:id="@+id/buttonMenos3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="-"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.272"
+                app:layout_constraintStart_toEndOf="@+id/textViewPirulito"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMenos" />
+
+            <Button
+                android:id="@+id/buttonMais2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais1" />
+
+            <Button
+                android:id="@+id/buttonMenos"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="-"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toEndOf="@+id/textViewBala"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMenos1" />
+
+            <TextView
+                android:id="@+id/textViewResultado"
+                android:layout_width="153dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCalcular" />
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="344dp"
+                android:text="Calcular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCantina" />
+
+            <Button
+                android:id="@+id/buttonMais7"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.247"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos7"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais6" />
+
+            <Button
+                android:id="@+id/buttonMais6"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos6"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais5" />
+
+            <Button
+                android:id="@+id/buttonMais5"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos5"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais4" />
+
+            <Button
+                android:id="@+id/buttonMais4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos4"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMais3" />
+
+            <Button
                 android:id="@+id/buttonMais1"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -27,8 +162,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.671"
-                app:layout_constraintStart_toEndOf="@+id/textViewBolo"
+                app:layout_constraintHorizontal_bias="0.256"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenos1"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCantina" />
 
             <Button
@@ -88,30 +223,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/buttonMenos3" />
 
             <Button
-                android:id="@+id/buttonMenos3"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:text="-"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="171dp"
-                tools:layout_editor_absoluteY="165dp" />
-
-            <Button
-                android:id="@+id/buttonMenos2"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:text="-"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
-                app:layout_constraintStart_toEndOf="@+id/textViewBala"
-                app:layout_constraintTop_toBottomOf="@+id/buttonMenos1" />
-
-            <Button
                 android:id="@+id/buttonMenos1"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -132,7 +243,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:text="Combo:"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
@@ -148,6 +259,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
                 android:text="Salgado:"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
@@ -195,7 +307,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
                 android:text="Bala: "
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
