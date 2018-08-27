@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
     private double valor6;
     private double valor7;
 
+    private Button buttonOka;
+    private EditText editTextValor;
+    private TextView textViewTroco;
+
+
     private double resultado;
 
     @Override
@@ -69,7 +75,13 @@ public class MainActivity extends AppCompatActivity {
         buttonMenos6 = (Button) findViewById(R.id.buttonMenos6);
         buttonMenos7 = (Button) findViewById(R.id.buttonMenos7);
 
-      //  buttonPagar = (Button) findViewById(R.id.buttonPagar);
+
+
+        buttonOka = (Button) findViewById(R.id.buttonOka);
+        textViewTroco = (TextView) findViewById(R.id.textViewTroco);
+        editTextValor = (EditText) findViewById(R.id.editTextValor);
+
+
 
 
         buttonMais1.setOnClickListener(new View.OnClickListener() {
@@ -202,15 +214,17 @@ public class MainActivity extends AppCompatActivity {
             }   });
 
 
-     /*   buttonPagar.setOnClickListener(new View.OnClickListener() {
+        buttonOka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this,Tela2Activity.class));
-
+                double valor1 = Double.parseDouble(editTextValor.getText().toString());
+                double troco = (valor1-resultado);
+                textViewTroco.setText("O valor de troco é: "+(troco));
 
             }
-        });*/
+        });
+
 
 
     }
