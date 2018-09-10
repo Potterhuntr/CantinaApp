@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
 
                 double valor1 = Double.parseDouble(editTextValor.getText().toString());
                 double troco = (valor1-resultado);
-                textViewTroco.setText("O valor de troco é: "+(troco));
+                textViewTroco.setText("O valor de troco é: "+troco);
 
             }
         });

@@ -9,24 +9,55 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="474dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/buttonOka"
+                android:layout_width="56dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="472dp"
+                android:text="OKA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTroco"
+                android:layout_width="143dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Troco:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="87dp"
                 android:layout_height="23dp"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="40dp"
-                android:text="Valor pago:"
+                android:layout_marginTop="24dp"
+                android:text="Valor:"
+                android:textColor="@android:color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/editText"
-                app:layout_constraintHorizontal_bias="0.444"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewPagar" />
 
@@ -46,15 +77,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textViewCombo" />
 
             <EditText
-                android:id="@+id/editText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:id="@+id/editTextValor"
+                android:layout_width="170dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
-                app:layout_constraintTop_toBottomOf="@+id/textViewResultado"
-                tools:layout_editor_absoluteX="121dp" />
+                app:layout_constraintEnd_toStartOf="@+id/buttonOka"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
 
             <Button
                 android:id="@+id/buttonMais3"
@@ -403,6 +436,7 @@
                 app:layout_constraintHorizontal_bias="0.028"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewBala" />
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
